@@ -2,7 +2,7 @@
     font-family: "source code pro";
     src: url("assets/Source_Code_Pro/SourceCodePro-VariableFont_wght.ttf") format("truetype");
 }
-@font-face { font-family: "DepartureMono Nerd Font"
+@font-face { font-family: "DepartureMono Nerd Font";
 src: url("assets/DepartureMono-1.500 2/DepartureMono-Regular.otf") format("opentype");
 }
 
