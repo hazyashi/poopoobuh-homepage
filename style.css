@@ -1,4 +1,134 @@
+@font-face {
+    font-family: "source code pro";
+    src: url("assets/Source_Code_Pro/SourceCodePro-VariableFont_wght.ttf") format("truetype");
+}
+@font-face { font-family: "DepartureMono Nerd Font"
+src: url("assets/DepartureMono-1.500 2/DepartureMono-Regular.otf") format("opentype");
+}
+
+/*---- Colors and stuff ------*/
+:root {
+
+    list-style: square;
+    /*-----Tokyo Night / Storm (Dark) -------*/
+    --terminal-red: #f7768e ;
+    --terminal-orange: #ff9e64;
+    --terminal-yellow: #e0af68;
+    --terminal-blue-green: #73daca;
+    --terminal-blue: #7aa2f7;
+    --terminal-cyan: #7dcfff;
+    --terminal-magenta: #bb9af7;
+    --terminal-white: #c0caf5;
+    --terminal-black: #414868;
+    --semantic-highlight: #cfc9c2;
+    --terminal-green: #9ece6a;
+    --terminal-light-blue: #b4f9f8;
+    --elements: #2ac3de;
+    --storm-background: #24283b;
+
+}
+
 body {
-    background-color: lightpink;
+    background-image: url("../assets/clouds.jpg");
+    background-size: cover;
     text-align: center;
+    color: pink;
+    font-family: "DepartureMono Nerd Font";
+
+}
+
+.main-flex-container {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    margin-left: 24vw;
+    margin-right: 24vw;
+    border-radius: 10px;
+    background-color: var(--storm-background);
+}
+
+
+li.directory-nav{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+
+li::marker{ color: var(--terminal-blue-green);}
+
+.list-image {
+        margin: 1px;
+        width: 26px;
+        height: 26px;
+        margin-right: 10px;
+    border: 1.5px solid var(--terminal-white);
+    border-radius: 16px;
+}
+
+.flex1 {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+    z-index: 20;
+}
+
+a {
+    background:
+            linear-gradient(
+                    to right,
+                    var(--terminal-light-blue),
+                    var(--terminal-blue)
+            ),
+            linear-gradient(
+                    to right,
+                    var(--terminal-white),
+                    var(--terminal-magenta),
+                    var(--terminal-red)
+            );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+a:hover {
+    background-size: 0 3px, 100% 3px;
+}
+
+@keyframes entry {
+    from{filter:blur(5px);opacity:0;};
+to{filter:blur(0px);opacity:1;};
+}
+@keyframes crt {
+    0%,
+    100%, {opacity:1;}
+    50% {opacity:0.91;};
+}
+
+#body-div {
+    background: repeating-linear-gradient(0deg,transparent,transparent 2px, rgba(0,0,0,0.5) 2px, rgba(0,0,0,0.25) 4px);
+    position: sticky;
+   z-index: 1;
+    animation: crt 0.08s steps(3) infinite;
+    animation-name: crt;
+    animation-duration: 0.08s;
+    animation-timing-function: steps(3);
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-timeline: ;
+    animation-range-start: ;
+    animation-range-end: ;
+    border-radius: 10px;
 }
