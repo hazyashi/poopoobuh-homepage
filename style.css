@@ -141,7 +141,7 @@ to{filter:blur(0px);opacity:1;};
     border-radius: 10px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 720px) {
     /* CSS styles specific to mobile devices go here */
     .main-flex-container {
         margin-left: 4vw;
