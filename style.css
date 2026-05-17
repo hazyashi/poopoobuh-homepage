@@ -31,6 +31,8 @@ src: url("assets/DepartureMono-1.500 2/DepartureMono-Regular.otf") format("opent
 body {
     background-image: url("../assets/clouds.jpg");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     text-align: center;
     color: pink;
     font-family: "DepartureMono Nerd Font";
@@ -63,6 +65,12 @@ li::marker{ color: var(--terminal-blue-green);}
         margin-right: 10px;
     border: 1.5px solid var(--terminal-white);
     border-radius: 16px;
+}
+.list-image-borderless {
+    margin: 1px;
+    width: 26px;
+    height: 30px;
+    margin-right: 10px;
 }
 
 .flex1 {
@@ -131,4 +139,15 @@ to{filter:blur(0px);opacity:1;};
     animation-range-start: ;
     animation-range-end: ;
     border-radius: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+    /* CSS styles specific to mobile devices go here */
+    .main-flex-container {
+        margin-left: 4vw;
+        margin-right: 4vw;
+    }
+    body {
+        font-size: 20px;
+    }
 }
