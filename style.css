@@ -48,7 +48,9 @@ body {
     background-color: var(--storm-background);
 }
 
-
+.directory-nav {
+   margin-top: 0px;
+}
 li.directory-nav{
     display: flex;
     flex-direction: row;
